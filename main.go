@@ -8,7 +8,12 @@ func main() {
 	// Quiz1()
 	// Quiz2()
 	// Quiz3()
-	Quiz4()
+	// Quiz4()
+	// Quiz5()
+	// Quiz6()
+	// Quiz7()
+	// Quiz8()
+	Quiz9()
 }
 
 func Quiz1() {
@@ -75,3 +80,80 @@ func Quiz4() {
 	}
 
 }
+
+func Quiz5() {
+	for i := 1; i <= 10; i++ {
+		fmt.Println(i)
+	}
+}
+
+func Quiz6() {
+	fmt.Print("Masukan Deret : ")
+	var n int
+	fmt.Scanln(&n)
+
+	var temp int = 1
+
+	for i := 1; i <= n; i++ {
+		temp = temp * 2
+
+		fmt.Println(temp)
+	}
+}
+
+func Quiz7() {
+	// Gunakan perulangan dan pengkondisian untuk mencetak angka dari 1 hingga 20,
+	// tetapi cetak "Fizz" untuk angka yang habis dibagi 3 dan "Buzz"
+	// untuk angka yang habis dibagi 5.
+
+	for i := 1; i <= 20; i++ {
+		if i%3 == 0 {
+			fmt.Println("Nomor Sekarang :", i)
+			fmt.Println("fiizzzzz")
+		}
+		if i%5 == 0 {
+			fmt.Println("Nomor Sekarang :", i)
+			fmt.Println("buuzzzzz")
+		}
+	}
+}
+
+func Quiz8() {
+	// Tuliskan sebuah program yang mencetak bilangan dari 1 sampai N,
+	// tetapi untuk kelipatan 3 cetak "Fizz", untuk kelipatan 5 cetak "Buzz",
+	// dan untuk kelipatan keduanya cetak "FizzBuzz".
+
+	fmt.Print("Isi angka bulan : ")
+	var angka int
+	fmt.Scanln(&angka)
+
+	for i := 1; i <= angka; i++ {
+		if i%3 == 0 {
+			fmt.Println("Nomor Sekarang :", i)
+			fmt.Println("fiizzzzz")
+		}
+		if i%5 == 0 {
+			fmt.Println("Nomor Sekarang :", i)
+			fmt.Println("buuzzzzz")
+		}
+		if i%5 == 0 && i%3 == 0 {
+			fmt.Println("Nomor Sekarang :", i)
+			fmt.Println("fiizzzzz buuzzzzz")
+		}
+	}
+}
+
+func Quiz9() {
+	// Buatlah sebuah program yang mencetak pola kotak dengan lapisan luar terdiri dari karakter *,
+	// sedangkan bagian dalamnya kosong/hollow (menggunakan karakter spasi), dengan ukuran N x N.
+	fmt.Print("Isi dimensi : ")
+	var dimensi int
+	fmt.Scanln(&dimensi)
+
+	for i := 1; i <= dimensi; i++ {
+		fmt.Println("*")
+	}
+}
+
+// Print("*")x5
+// Print(" ")

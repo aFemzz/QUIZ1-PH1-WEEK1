@@ -6,14 +6,14 @@ import (
 
 func main() {
 	// Quiz1()
-	// Quiz2()
+	Quiz2()
 	// Quiz3()
 	// Quiz4()
 	// Quiz5()
 	// Quiz6()
 	// Quiz7()
 	// Quiz8()
-	Quiz9()
+	// Quiz9()
 }
 
 func Quiz1() {
@@ -38,8 +38,7 @@ func Quiz2() {
 }
 
 func Quiz3() {
-	var number int
-	number = 10
+	var number int = 10
 	if number%2 == 0 {
 		fmt.Printf("Nomor berikut %d adalah Genap.\n", number)
 	} else {

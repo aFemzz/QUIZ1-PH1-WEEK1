@@ -151,7 +151,23 @@ func Quiz9() {
 	fmt.Scanln(&dimensi)
 
 	for i := 1; i <= dimensi; i++ {
-		fmt.Println("*")
+		if i == 1 {
+			for i := 1; i <= dimensi; i++ {
+				fmt.Print("*")
+			}
+			println()
+		} else if i == dimensi {
+			for i := 1; i <= dimensi; i++ {
+				fmt.Print("*")
+			}
+		} else {
+			print("*")
+			for i := 0; i < dimensi-2; i++ {
+				print(" ")
+			}
+			println("*")
+		}
+
 	}
 }
 
